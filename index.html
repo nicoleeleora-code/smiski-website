@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js" type="text/javascript"></script>
+	<title>Nicole's SMISKI Website</title>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div>
+				<a href="index.html" class="logo">
+					<img src="logo.png" alt="">
+				</a>
+				<a href="https://freewebsitetemplates.com/preview/frozenyogurtshop/index.html"
+					class="template-link"
+					target="_blank">
+					https://freewebsitetemplates.com/preview/frozenyogurtshop/index.html
+				</a>
+				<ul id="navigation">
+					<li class="selected">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="menu">
+						<a href="about.html">Smiski</a>
+						<ul class="primary">
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="blog.html">Collection</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="body" class="home">
+			<div class="header">
+				<img src="smiski 4.png" alt="">
+				<div>
+					<a href="product.html"></a>
+				</div>
+			</div>
+			<div class="body">
+				<div>
+					<img src="about.png" width= "400" height="150" alt="">
+					<div>
+						<h1>Smiski, a series of small, glow-in-the-dark collectible figurines created by Dreams Inc., a Japanese company.</h1>
+						<p>Smiskis are said to live quietly in the corners of rooms, often hiding in plain sight while observing everyday life. Each series features Smiskis in different themes and activities, 
+						making them a fun surprise for collectors and fans of cute, whimsical characters. Made from phosphorescent material, Smiskis absorb light during the day and emit a soft green glow in the dark. Whether displayed on a desk, bookshelf, bedside table, or workspace, Smiskis bring personality and a sense of fun to any environment.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div>
+					<ul>
+						<li><img src="cat.png" width="450px" height="180px" alt="Smiski 1"></li>
+						<li><img src="sweater.png" width="450px" height="180px" alt="Smiski 2"></li>
+						<li><img src="laptop.png" width="450px" height="180px" alt="Smiski 3"></li>
+						<li><img src="picasso.png" width="450px" height="180px" alt="Smiski 4"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<div class="quiz-box">
+    <h2>Short Quiz!</h2>
+    <h3>Which Smiski Are You?</h3>
+
+    <p>What's your favorite activity?</p>
+
+    <select id="hobby">
+        <option value="Dressing Up">Dressing Up</option>
+        <option value="sleeping">Sleeping</option>
+        <option value="working">Working</option>
+        <option value="exercising">Exercising</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="findSmiski()">Find My Smiski</button>
+
+    <p id="result"></p>
+</div>
+		<div id="footer">
+			<div>
+				<div class="connect">
+					<a href="https://www.instagram.com/smiski_usa/" class="instagram">instagram</a>
+					<a href="https://x.com/smiski_usa_" class="X">X</a>
+					<a href="https://www.youtube.com/channel/UCkKGZJ-oZ6PhxFVI_Ppm26g" class="youtube">youtube</a>
+					<a href="https://www.tiktok.com/@smiski_usa" class="tiktok">tiktok</a>
+				</div>
+				<p>&copy; Nicole Eleora Purwobintoro, 25229558</p>
+			</div>
+		</div>
+	</div>
+<script>
+window.alert("Welcome to Nicole's SMISKI Website!");
+function findSmiski() {
+
+    let hobby = document.getElementById("hobby").value;
+    let message = "";
+
+    if (hobby === "Dressing Up") {
+        message = "You're Dressing Series Smiski! You love wearing comfy clothing.";
+    }
+    else if (hobby === "sleeping") {
+        message = "You're Bed Series Smiski! Staying inside and sleeping is your favourite thing to do.";
+    }
+    else if (hobby === "working") {
+        message = "You're Work Series Smiski! You are very productive.";
+    }
+    else {
+        message = "You're Exercise Series Smiski! You're always excited and full of energy.";
+    }
+
+    document.getElementById("result").innerHTML = message;
+}
+</script>
+
+</body>
+</html>
